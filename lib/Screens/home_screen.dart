@@ -1,6 +1,7 @@
+import 'package:final_task/Screens/FingerPrint/auth_page.dart';
+import 'package:final_task/Screens/FingerPrint/fingerprint_screen.dart';
 import 'package:final_task/Screens/ads_screen.dart';
 import 'package:final_task/Screens/audio_screen.dart';
-import 'package:final_task/Screens/fingerprint_screen.dart';
 import 'package:final_task/Screens/map_screen.dart';
 import 'package:final_task/Screens/notification_screen.dart';
 import 'package:final_task/Screens/payment_screen.dart';
@@ -16,7 +17,7 @@ class Home_Screen extends StatelessWidget {
     {"name": "Google Map", "screen": Map_Screen()},
     {"name": "Weather", "screen": WeatherScreen()},
     {"name": "Camera Scanner", "screen": Scanner_Screen()},
-    {"name": "Fingerprint Scan", "screen": FingerprintScreen()},
+    {"name": "Fingerprint Scan", "screen": AuthPage()},
     {"name": "Audio Recording", "screen": Audio_Screen()},
     {"name": "Video Recording", "screen": Video_Screen()},
     {"name": "Push Notification", "screen": Notification_Screen()},
