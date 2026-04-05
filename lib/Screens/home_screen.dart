@@ -1,28 +1,27 @@
+import 'package:final_task/Screens/Ads/ads_screen.dart';
+import 'package:final_task/Screens/Audio/audio_screen.dart';
 import 'package:final_task/Screens/FingerPrint/auth_page.dart';
 import 'package:final_task/Screens/FingerPrint/fingerprint_screen.dart';
-import 'package:final_task/Screens/ads_screen.dart';
-import 'package:final_task/Screens/audio_screen.dart';
-import 'package:final_task/Screens/map_screen.dart';
-import 'package:final_task/Screens/notification_screen.dart';
-import 'package:final_task/Screens/payment_screen.dart';
-import 'package:final_task/Screens/qr_screen.dart';
-import 'package:final_task/Screens/scanner_screen.dart';
-import 'package:final_task/Screens/video_screen.dart';
-import 'package:final_task/Screens/weather_screen.dart';
-import 'package:final_task/webview_screen.dart';
+import 'package:final_task/Screens/Map/map_screen.dart';
+import 'package:final_task/Screens/Notification/notification_screen.dart';
+import 'package:final_task/Screens/Payment/payment_screen.dart';
+import 'package:final_task/Screens/QR%20Code/qr_screen.dart';
+import 'package:final_task/Screens/Scanner/scanner_homeview.dart';
+import 'package:final_task/Screens/Video/video_screen.dart';
+import 'package:final_task/Screens/Weather/weather_screen.dart';
+
 import 'package:flutter/material.dart';
 
 class Home_Screen extends StatelessWidget {
   final List features = [
     {"name": "Google Map", "screen": Map_Screen()},
     {"name": "Weather", "screen": WeatherScreen()},
-    {"name": "Camera Scanner", "screen": Scanner_Screen()},
+    {"name": "Camera Scanner", "screen": Scanner_HomeView()},
     {"name": "Fingerprint Scan", "screen": AuthPage()},
     {"name": "Audio Recording", "screen": Audio_Screen()},
     {"name": "Video Recording", "screen": Video_Screen()},
     {"name": "Push Notification", "screen": Notification_Screen()},
     {"name": "Stripe Payment", "screen": Payment_Screen()},
-    {"name": "WebView", "screen": Webview_Screen()},
     {"name": "QR Code Scanner", "screen": QR_Screen()},
     {"name": "Google Map", "screen": Ads_Screen()},
   ];
